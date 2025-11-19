@@ -18,7 +18,7 @@ const steps = [
 
 export default function HowItWorks() {
 	return (
-		<section className="flex justify-center py-24 sm:py-32 mb-24 sm:mb-28">
+		<section className="min-h-[80vh] flex flex-col items-center justify-center py-24">
 			<div className="w-full max-w-6xl px-4">
 				<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-20 text-center">
 					How Klip Works

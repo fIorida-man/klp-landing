@@ -29,15 +29,20 @@ export default function WaitlistCTA() {
 	};
 
 	return (
-		<section id="waitlist" className="flex justify-center py-24 sm:py-32">
+		<section id="waitlist" className="min-h-[80vh] flex flex-col items-center justify-center py-24">
 			<div className="w-full max-w-6xl px-4">
-				<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4 text-center">
-					Be first to use Klip
-				</h2>
-				<p className="text-xl text-gray-600 dark:text-gray-400 mb-12 leading-relaxed text-center">
-					Join the waitlist and get early access when we launch.
-				</p>
-				<form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto justify-center items-center">
+			<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4 text-center">
+				Be first to use Klip
+			</h2>
+			<div className="w-full flex justify-center mb-12">
+				<div className="text-center max-w-xl space-y-2 mx-auto">
+					<p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
+						Join the waitlist and get early access when we launch.
+					</p>
+				</div>
+			</div>
+			<div className="w-full flex justify-center">
+				<form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md justify-center items-center">
 					<div className="flex-1 relative w-full sm:w-auto">
 						<input
 							type="email"
@@ -88,10 +93,11 @@ export default function WaitlistCTA() {
 								Joined!
 							</span>
 						) : (
-							"Join Waitlist"
-						)}
-					</button>
-				</form>
+					"Join Waitlist"
+				)}
+			</button>
+		</form>
+			</div>
 			</div>
 		</section>
 	);

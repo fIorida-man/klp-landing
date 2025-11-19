@@ -27,16 +27,20 @@ const mockKlips = [
 
 export default function DailyKlipPreview() {
 	return (
-		<section className="flex justify-center py-24 sm:py-32 bg-gray-50 dark:bg-gray-950">
+		<section className="min-h-[80vh] flex flex-col items-center justify-center py-24 bg-gray-50 dark:bg-gray-950">
 			<div className="w-full max-w-6xl px-4">
-				<div className="text-center mb-20">
-					<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4 text-center">
-						Daily Klip Feed
-					</h2>
-					<p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-						One curated Klip per friend. See what matters to them today.
-					</p>
+			<div className="text-center mb-20">
+				<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4 text-center">
+					Daily Klip Feed
+				</h2>
+				<div className="w-full flex justify-center">
+					<div className="text-center max-w-xl space-y-2 mx-auto">
+						<p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
+							One curated Klip per friend. See what matters to them today.
+						</p>
+					</div>
 				</div>
+			</div>
 				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center">
 					{mockKlips.map((item, index) => (
 						<div
