@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Klip — The internet as you feel it",
+	title: "Klip | Your Internet Identity",
 	description: "Your life on the internet, saved as you feel it. Save URLs, curate your Daily Klip, and share meaningful moments with friends.",
 };
 

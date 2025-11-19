@@ -21,9 +21,9 @@ export default function WhyKlip() {
 	return (
 		<section className="min-h-[80vh] flex flex-col items-center justify-center py-24 bg-gray-50 dark:bg-gray-950">
 			<div className="w-full max-w-6xl px-4">
-				<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-20 text-center">
-					Why Klip
-				</h2>
+				<h2 className="text-4xl sm:text-5xl text-red-500 dark:text-red-500 font-semibold tracking-tight mb-20 text-center">
+					Why Klip?
+				</h2><br/>
 			<div className="space-y-16">
 				{points.map((point, index) => (
 					<div key={index} className="text-center">
@@ -32,7 +32,7 @@ export default function WhyKlip() {
 							<div className="text-center max-w-xl space-y-2 mx-auto">
 								<p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
 									{point.description}
-								</p>
+								</p><br/>
 							</div>
 						</div>
 					</div>

@@ -31,14 +31,14 @@ export default function WaitlistCTA() {
 	return (
 		<section id="waitlist" className="min-h-[80vh] flex flex-col items-center justify-center py-24">
 			<div className="w-full max-w-6xl px-4">
-			<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4 text-center">
+			<h2 className="text-4xl sm:text-5xl text-red-500 dark:text-red-500 font-semibold tracking-tight mb-4 text-center">
 				Be first to use Klip
-			</h2>
+			</h2><br/>
 			<div className="w-full flex justify-center mb-12">
 				<div className="text-center max-w-xl space-y-2 mx-auto">
 					<p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
 						Join the waitlist and get early access when we launch.
-					</p>
+					</p><br/>
 				</div>
 			</div>
 			<div className="w-full flex justify-center">
@@ -51,7 +51,7 @@ export default function WaitlistCTA() {
 								setEmail(e.target.value);
 								setError("");
 							}}
-							placeholder="Enter your email"
+							placeholder="Email Address"
 							required
 							disabled={submitted}
 							className={`w-full px-6 py-4 border rounded-full bg-white dark:bg-black transition-all ${

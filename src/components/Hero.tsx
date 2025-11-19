@@ -34,7 +34,7 @@ export default function Hero() {
 					<div className="relative z-10">
 						<Image
 							src="/logo.png"
-							alt="Klip Logo"
+							alt="Logo"
 							width={2716}
 							height={1000}
 							className="h-20 sm:h-24 md:h-28 w-auto drop-shadow-lg"
@@ -43,19 +43,25 @@ export default function Hero() {
 						/>
 					</div>
 				</div>
-				<h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight mb-8 leading-tight">
-					The internet as you feel it
-				</h1>
-				<p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto font-light leading-relaxed">
-					Your life on the internet, saved as you feel it.
-				</p>
-				<a
-					href="#waitlist"
-					className="inline-block px-20 py-10 bg-white text-black rounded-full font-semibold text-2xl hover:scale-105 active:scale-95 transition-transform shadow-lg hover:shadow-xl border border-gray-300 dark:bg-white dark:text-black dark:border-gray-600"
-					style={{ color: "#000000" }}
-				>
-					Join the Waitlist
-				</a>
+				<h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight mb-42">
+    	WHAT MATTERS
+	</h1>
+
+	<p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto font-light leading-relaxed text-center mb-24">
+	<br/>
+	Save the posts, videos, songs, and links that hit<br/>
+    They live on your Klipboard<br/>
+    Choose one a day to share with friends<br/>
+	<br/>
+</p>
+
+<a
+    href="#waitlist"
+    className="inline-block px-40 py-20 bg-red-500 text-white rounded-full font-semibold text-3xl hover:scale-110 active:scale-95 transition-transform shadow-lg hover:shadow-xl dark:bg-red-500 dark:text-white"
+>
+    Join the Waitlist
+</a>
+
 			</div>
 		</section>
 	);
