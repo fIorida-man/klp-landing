@@ -51,8 +51,8 @@ export default function Hero() {
 				</p>
 				<a
 					href="#waitlist"
-					className="inline-block px-14 py-7 bg-white text-black rounded-full font-medium text-xl hover:scale-105 active:scale-95 transition-transform shadow-lg hover:shadow-xl border border-gray-300 dark:bg-white dark:text-black dark:border-gray-600"
-					style={{ color: '#000000' }}
+					className="inline-block px-20 py-10 bg-white text-black rounded-full font-semibold text-2xl hover:scale-105 active:scale-95 transition-transform shadow-lg hover:shadow-xl border border-gray-300 dark:bg-white dark:text-black dark:border-gray-600"
+					style={{ color: "#000000" }}
 				>
 					Join the Waitlist
 				</a>

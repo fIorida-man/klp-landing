@@ -27,21 +27,21 @@ const mockKlips = [
 
 export default function DailyKlipPreview() {
 	return (
-		<section className="py-24 sm:py-32 px-6 sm:px-8 lg:px-12 bg-gray-50 dark:bg-gray-950">
-			<div className="max-w-6xl mx-auto">
+		<section className="flex justify-center py-24 sm:py-32 bg-gray-50 dark:bg-gray-950">
+			<div className="w-full max-w-6xl px-4">
 				<div className="text-center mb-20">
-					<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4">
+					<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4 text-center">
 						Daily Klip Feed
 					</h2>
 					<p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
 						One curated Klip per friend. See what matters to them today.
 					</p>
 				</div>
-				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center">
 					{mockKlips.map((item, index) => (
 						<div
 							key={index}
-							className="bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+							className="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
 						>
 							<div className={`aspect-[16/10] bg-gradient-to-br ${item.klip.gradient} flex items-center justify-center relative overflow-hidden`}>
 								<div className="absolute inset-0 opacity-10 dark:opacity-5">
@@ -53,7 +53,7 @@ export default function DailyKlipPreview() {
 							</div>
 							<div className="p-6">
 								<div className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-500 mb-3 font-medium">
-									{`${item.name}’s Daily Klip`}
+									{`${item.name}'s Daily Klip`}
 								</div>
 								<h3 className="font-semibold text-lg mb-2 leading-tight">{item.klip.title}</h3>
 								<div className="text-sm text-gray-500 dark:text-gray-500 truncate">

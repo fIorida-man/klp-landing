@@ -18,16 +18,16 @@ const steps = [
 
 export default function HowItWorks() {
 	return (
-		<section className="py-24 sm:py-32 px-6 sm:px-8 lg:px-12 mb-24 sm:mb-28">
-			<div className="max-w-6xl mx-auto">
+		<section className="flex justify-center py-24 sm:py-32 mb-24 sm:mb-28">
+			<div className="w-full max-w-6xl px-4">
 				<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-20 text-center">
 					How Klip Works
 				</h2>
-				<div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+				<div className="grid md:grid-cols-3 gap-8 lg:gap-12 justify-items-center">
 					{steps.map((step, index) => (
 						<div
 							key={index}
-							className="bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl p-10 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
+							className="w-full max-w-sm bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl p-10 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
 						>
 							<div className="text-6xl font-extralight text-gray-200 dark:text-gray-800 mb-6 tracking-tight">
 								{step.number}

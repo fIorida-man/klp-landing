@@ -19,8 +19,8 @@ const points = [
 
 export default function WhyKlip() {
 	return (
-		<section className="py-24 sm:py-32 px-6 sm:px-8 lg:px-12 bg-gray-50 dark:bg-gray-950">
-			<div className="max-w-4xl mx-auto">
+		<section className="flex justify-center py-24 sm:py-32 bg-gray-50 dark:bg-gray-950">
+			<div className="w-full max-w-6xl px-4">
 				<h2 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-20 text-center">
 					Why Klip
 				</h2>
